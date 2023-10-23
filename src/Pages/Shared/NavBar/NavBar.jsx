@@ -1,6 +1,6 @@
-
 import { NavLink } from "react-router-dom";
 import './NavBar.css'
+import logo from '../../../../public/logo.png'
 
 
 const NavBar = () => {
@@ -49,6 +49,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     {/* <a className="btn btn-ghost normal-case text-xl">BAIUST</a> */}
+                    <img className="h-16 w-14" src={logo} alt="" />
                 </div>
 
 
