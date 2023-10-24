@@ -11,6 +11,7 @@ import AdminLogin from "../Pages/Login/AdminLogin";
 import About from "../Pages/About/About";
 import StudentLogin from "../Pages/Login/StudentLogin";
 import Admission from "../Pages/Admission/Admission";
+import ReadMore from "../Pages/Home/ParallaxCover/ReadMore";
 
 export const router = createBrowserRouter([
     {
@@ -59,7 +60,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "admission",
-                element: <Admission></Admission>
+                element: <Admission></Admission>,
+            },
+            {
+                path: "readMore",
+                element: <ReadMore></ReadMore>,
             },
         ]
     }

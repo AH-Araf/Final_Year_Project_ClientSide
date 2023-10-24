@@ -13,26 +13,26 @@ const Banner = () => {
         <div className="banner-body">
             <Carousel>
                 <div>
-                    <img src={img1} />
-                    <Link className="legend" target="_blank" to=''>Menu 1</Link>
+                    <img src={img3} />
+                    <Link className="legend" target="_blank" to=''>Details Link 1 </Link>
                 </div>
                 <div>
                     <img src={img2} />
-                    <Link className="legend" target="_blank" to=''>Menu 2</Link>
+                    <Link className="legend" target="_blank" to=''>Details Link 2</Link>
                 </div>
                 <div>
-                    <img src={img3} />
-                    <Link className="legend" target="_blank" to=''>Menu 3</Link>
+                    <img src={img1} />
+                    <Link className="legend" target="_blank" to=''>Details Link 3</Link>
                 </div>
                 <div>
                     <img src={img4} />
-                    <Link className="legend" target="_blank" to=''>Menu 4</Link>
+                    <Link className="legend" target="_blank" to=''>Details Link 4</Link>
                 </div>
                 <div>
                     <img src={img5} />
-                    <Link className="legend" target="_blank" to=''>Menu 5</Link>
+                    <Link className="legend" target="_blank" to=''>Details Link 5</Link>
                 </div>
-              
+
             </Carousel>
         </div>
     );

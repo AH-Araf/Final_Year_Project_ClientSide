@@ -1,0 +1,12 @@
+.slide {
+    height: 550px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+    .slide {
+        height: 220px;
+        width: 100%;
+    }
+}
