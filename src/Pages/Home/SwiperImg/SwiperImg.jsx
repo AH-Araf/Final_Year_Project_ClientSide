@@ -8,11 +8,11 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-import img1 from '../../../assets/home/1.jpg'
-import img2 from '../../../assets/home/2.png'
-import img3 from '../../../assets/home/3.png'
-import img4 from '../../../assets/home/4.jpg'
-import img5 from '../../../assets/home/5.png'
+import img1 from '../../../assets/home/sir1.png'
+import img2 from '../../../assets/home/sir2.png'
+import img3 from '../../../assets/home/sir3.png'
+import img4 from '../../../assets/home/sir4.png'
+
 
 import './SwiperImg.css'
 
@@ -20,7 +20,7 @@ const SwiperImg = () => {
     return (
   
             <div className="container">
-                <h1 className="heading">ABCD</h1>
+                <h1 className="text-3xl heading">Messages</h1>
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}
@@ -43,33 +43,26 @@ const SwiperImg = () => {
                     className="swiper_container"
                 >
                     <SwiperSlide>
-                        <img src={img1} alt="slide_image" />
+                        <img className='border-4 border-blue-400' src={img1} alt="slide_image" />
+                        
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={img2} alt="slide_image" />
+                        <img className='border-4 border-blue-400' src={img2} alt="slide_image" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={img3} alt="slide_image" />
+                        <img className='border-4 border-blue-400' src={img3} alt="slide_image" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={img4} alt="slide_image" />
+                        <img className='border-4 border-blue-400' src={img4} alt="slide_image" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img5} alt="slide_image" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img1} alt="slide_image" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img2} alt="slide_image" />
-                    </SwiperSlide>
+                    
 
                     <div className="slider-controler">
                         <div className="swiper-button-prev slider-arrow">
-                            <ion-icon name="arrow-back-outline"></ion-icon>
+                            <ion-icon name="arrow-back-outline">⬅️</ion-icon>
                         </div>
                         <div className="swiper-button-next slider-arrow">
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            <ion-icon name="arrow-forward-outline">➡️</ion-icon>
                         </div>
                         <div className="swiper-pagination"></div>
                     </div>
