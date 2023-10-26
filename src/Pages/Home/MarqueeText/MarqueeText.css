@@ -1,8 +1,8 @@
 .marquee-body{
     display: flex;
-    border: 3.1px solid green;
     font-size: x-large;
     font-weight: 600;
+    margin: 0px 20px;
 }
 .marquee-img{
     margin: 0px 18px;
@@ -13,8 +13,7 @@
 @media screen and (max-width: 480px){
     .marquee-body{
         display: flex;
-        border: 2.1px solid green;
-        font-size: medium;
+        font-size: small;
         font-weight: 600;
     }
     .marquee-img{

@@ -3,6 +3,7 @@ import './NavBar.css'
 import logo from '../../../../public/logo.png'
 
 
+
 const NavBar = () => {
 
     return (
@@ -23,7 +24,7 @@ const NavBar = () => {
                                     <summary>BAIUST</summary>
                                     <ul className="p-2 bg-opacity-30 bg-green-100 dropdown-box">
                                         <li><NavLink to="/publications">Publications</NavLink></li>
-                                        <li><NavLink to="/academicCalender">Academic Calender</NavLink></li>
+                                        <li><NavLink target="_blank" to="https://drive.google.com/file/d/1eafym5wCUU4iPJxMUYIHIjlZsbD8Jk0O/view">Academic Calender</NavLink></li>
                                         <li><NavLink to="/newsLetter">News Letter</NavLink></li>
                                         <li><NavLink to="/journal">Journal</NavLink></li>
                                         <li><NavLink to="/imageGallery">Image Gallery</NavLink></li>
@@ -57,6 +58,7 @@ const NavBar = () => {
                 {/* Large Device */}
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
+                    
                         <li>
                             <NavLink to="/">Home</NavLink>
                         </li>
@@ -65,7 +67,7 @@ const NavBar = () => {
                                 <summary>BAIUST</summary>
                                 <ul className="p-2 z-[1]  bg-green-100 dropdown-box">
                                     <li><NavLink to="/publications">Publications</NavLink></li>
-                                    <li><NavLink to="/academicCalender">Academic Calender</NavLink></li>
+                                    <li><NavLink target="_blank" to="https://drive.google.com/file/d/1eafym5wCUU4iPJxMUYIHIjlZsbD8Jk0O/view">Academic Calender</NavLink></li>
                                     <li><NavLink to="/newsLetter">News Letter</NavLink></li>
                                     <li><NavLink to="/journal">Journal</NavLink></li>
                                     <li><NavLink to="/imageGallery">Image Gallery</NavLink></li>
@@ -91,6 +93,7 @@ const NavBar = () => {
 
 
                     </ul>
+                    
                 </div>
 
             </div>

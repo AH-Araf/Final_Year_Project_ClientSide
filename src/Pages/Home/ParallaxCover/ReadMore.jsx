@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 
 
 const ReadMore = () => {
     return (
         <div className="hero-overlay bg-opacity-60 text-neutral-content p-20 text-lg">
+            <Helmet>
+                <title>BAIUST | Home | ReadMore</title>
+            </Helmet>
             <p>
                 1. <u><b> Army Administered & UGC Approved:</b></u> Bangladesh Army International University of Science and Technology (BAIUST) runs under the direct supervision of the Bangladesh Army. Its programs are approved by UGC. The Vice-Chancellor (VC) is selected from the teachers of the Military Institute of Science & Technology (MIST) and approved by the Chancellor— the Honorable President of Bangladesh.
                 <br /> 2. <u><b> Access to the VC:</b></u> The University gives top priority to its students and provides utmost care to students’ needs. All the students have access to the VC for their educational, administrative, and personal requirements when necessary. In addition, the VC interacts with all students regularly. The VC and faculties also interact with parents/guardians when required.

@@ -5,6 +5,7 @@ import MarqueeText from "../MarqueeText/MarqueeText";
 import ParallaxCover from "../ParallaxCover/ParallaxCover";
 import './Home.css'
 import SwiperImg from "../SwiperImg/SwiperImg";
+import YouTubeVideo from "../YouTubeVideo/YouTubeVideo";
 
 
 
@@ -14,12 +15,13 @@ const Home = () => {
             <Helmet>
                 <title>BAIUST | Home</title>
             </Helmet>
+            
             <Banner></Banner>
             <MarqueeText></MarqueeText>
             <HomeDetails></HomeDetails>
             <ParallaxCover></ParallaxCover>
             <SwiperImg></SwiperImg>
-
+            <YouTubeVideo></YouTubeVideo>
         </div>
     );
 };
