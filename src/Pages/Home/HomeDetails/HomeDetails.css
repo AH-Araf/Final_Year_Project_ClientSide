@@ -25,7 +25,7 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 516px){
     .home-details-sec1{
         display: flex;
         flex-direction: column;

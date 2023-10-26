@@ -8,7 +8,6 @@
     background-size: cover;
     filter: blur(2px);
     -webkit-filter: blur(8px);
-
 }
 
 .bg-text {
@@ -30,48 +29,58 @@
 }
 
 
-.email-heading{
+.email-heading {
     font-weight: 600;
-    color:rgb(157, 206, 157) ;
+    color: rgb(157, 206, 157);
 }
-.mail-main-section{
+
+.mail-main-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: 6px solid gray;
+    border-bottom: 6px solid gray;
+    margin: 70px 100px;
 }
-.mail-main-section img{
+
+.mail-main-section img {
     height: 320px;
     width: 450px;
 }
-.mail-section{
+
+.mail-section {
     margin: 30px 40px;
     padding-bottom: 30px;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mail-header{
+
+.mail-header {
     margin-top: 100px;
 }
-.email-from{
+
+.email-from {
     display: flex;
     flex-direction: column;
     width: 500px;
 }
-.input1{
+
+.input1 {
     color: black;
     font-weight: 400;
-    font-size:medium;
+    font-size: medium;
     height: 40px;
     border-radius: 10px;
     border: 3px solid rgb(157, 206, 157);
     padding: 0px 10px;
     margin-bottom: 10px;
 }
-.input2{
+
+.input2 {
     color: black;
     font-weight: 400;
     font-size: medium;
@@ -80,11 +89,13 @@
     border: 3px solid rgb(157, 206, 157);
     padding: 0px 10px;
 }
-.label1{
+
+.label1 {
     color: rgb(157, 206, 157);
     font-weight: 600;
 }
-.send-btn{
+
+.send-btn {
     background-color: rgb(157, 206, 157);
     width: 90px;
     height: 30px;
@@ -92,8 +103,35 @@
     border-radius: 5px;
     font-size: large;
     font-weight: 600;
-    
+
 }
-.send-btn:hover{
-    background-color:rgb(157, 206, 157);
+
+.send-btn:hover {
+    background-color: rgb(157, 206, 157);
+}
+
+
+@media screen and (max-width: 516px) {
+    .mail-main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid gray;
+        border-bottom: 4px solid gray;
+        margin: 50px 15px;
+    }
+
+    .mail-main-section img {
+        height: 220px;
+        width: 350px;
+        padding-top: 20px;
+    }
+    .mail-section {
+        width: 280px;
+        margin: 30px 20px;
+    }
+    .bg-image {
+        height: 450px;
+    }
 }
