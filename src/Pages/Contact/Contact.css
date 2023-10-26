@@ -1,0 +1,99 @@
+.bg-image {
+    display: flex;
+    justify-content: center;
+    background-image: url(../../../src/assets/image/contact.jpg);
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(8px);
+
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.email-heading{
+    font-weight: 600;
+    color:rgb(157, 206, 157) ;
+}
+.mail-main-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mail-main-section img{
+    height: 320px;
+    width: 450px;
+}
+.mail-section{
+    margin: 30px 40px;
+    padding-bottom: 30px;
+    /* display: flex;
+    justify-content: center; */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mail-header{
+    margin-top: 100px;
+}
+.email-from{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.input1{
+    color: black;
+    font-weight: 400;
+    font-size:medium;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid rgb(157, 206, 157);
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+.input2{
+    color: black;
+    font-weight: 400;
+    font-size: medium;
+    height: 70px;
+    border-radius: 10px;
+    border: 3px solid rgb(157, 206, 157);
+    padding: 0px 10px;
+}
+.label1{
+    color: rgb(157, 206, 157);
+    font-weight: 600;
+}
+.send-btn{
+    background-color: rgb(157, 206, 157);
+    width: 90px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 600;
+    
+}
+.send-btn:hover{
+    background-color:rgb(157, 206, 157);
+}

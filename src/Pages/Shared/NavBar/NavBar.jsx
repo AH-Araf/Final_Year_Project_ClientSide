@@ -25,7 +25,7 @@ const NavBar = () => {
                                     <ul className="p-2 bg-opacity-30 bg-green-100 dropdown-box">
                                         <li><NavLink to="/publications">Publications</NavLink></li>
                                         <li><NavLink target="_blank" to="https://drive.google.com/file/d/1eafym5wCUU4iPJxMUYIHIjlZsbD8Jk0O/view">Academic Calender</NavLink></li>
-                                        <li><NavLink to="/newsLetter">News Letter</NavLink></li>
+                                        <li><NavLink target="_blank" to="https://drive.google.com/file/d/1RCNhKrqqajRDvfCqHdRCZAjum_MC76pB/view">News Letter</NavLink></li>
                                         <li><NavLink to="/journal">Journal</NavLink></li>
                                         <li><NavLink to="/imageGallery">Image Gallery</NavLink></li>
 
@@ -68,7 +68,7 @@ const NavBar = () => {
                                 <ul className="p-2 z-[1]  bg-green-100 dropdown-box">
                                     <li><NavLink to="/publications">Publications</NavLink></li>
                                     <li><NavLink target="_blank" to="https://drive.google.com/file/d/1eafym5wCUU4iPJxMUYIHIjlZsbD8Jk0O/view">Academic Calender</NavLink></li>
-                                    <li><NavLink to="/newsLetter">News Letter</NavLink></li>
+                                    <li><NavLink target="_blank" to="https://drive.google.com/file/d/1RCNhKrqqajRDvfCqHdRCZAjum_MC76pB/view">News Letter</NavLink></li>
                                     <li><NavLink to="/journal">Journal</NavLink></li>
                                     <li><NavLink to="/imageGallery">Image Gallery</NavLink></li>
 
