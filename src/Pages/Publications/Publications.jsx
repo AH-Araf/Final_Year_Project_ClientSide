@@ -12,20 +12,20 @@ import './Publications.css'
 
 const Publications = () => {
     return (
-        <div>
+        <div className="scroll-smooth">
             <Helmet>
                 <title>BAIUST | Publications</title>
             </Helmet>
 
             <Tabs>
-                <TabList className='bg-blue-200 px-4'>
+                <TabList className='bg-blue-200'>
                     <Tab>CSE</Tab>
                     <Tab>EEE</Tab>
                     <Tab>CE</Tab>
                     <Tab>DBA</Tab>
-                    <Tab>English</Tab>
+                    <Tab>ENG</Tab>
                     <Tab>Law</Tab>
-                    <Tab>Sc & Hum</Tab>
+                    <Tab>Sc&Hum</Tab>
                 </TabList>
 
                 <TabPanel>

@@ -11,7 +11,7 @@ import YouTubeVideo from "../YouTubeVideo/YouTubeVideo";
 
 const Home = () => {
     return (
-        <div>
+        <div className="scroll-smooth">
             <Helmet>
                 <title>BAIUST | Home</title>
             </Helmet>

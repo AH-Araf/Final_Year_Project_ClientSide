@@ -21,7 +21,7 @@ const Contact = () => {
 
 
     return (
-        <div>
+        <div className="scroll-smooth">
             <Helmet>
                 <title>BAIUST | Contact</title>
             </Helmet>

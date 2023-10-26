@@ -9,7 +9,7 @@ import h from '../../../src/assets/Publications/EEE/h.png'
 
 const EEE = () => {
     return (
-        <div>
+        <div className="scroll-smooth">
             <div className='msc-container'>
                 <div>
                     <img src={a} alt="" />

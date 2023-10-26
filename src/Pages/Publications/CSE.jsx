@@ -13,7 +13,7 @@ import l from '../../../src/assets/Publications/CSE/l.jpg'
 
 const CSE = () => {
     return (
-        <div>
+        <div className="scroll-smooth">
             <div className='msc-container'>
                 <div>
                     <img src={a} alt="" />
