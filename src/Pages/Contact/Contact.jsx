@@ -3,6 +3,7 @@ import mailImg from '../../../src/assets/image/emailImg.png'
 
 import './Contact.css'
 import { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 const Contact = () => {
 
     const form = useRef();
@@ -21,6 +22,9 @@ const Contact = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>BAIUST | Contact</title>
+            </Helmet>
             <div >
                 <div className='m-5 border-4 border-green-300'>
                     <div className="bg-image"></div>
