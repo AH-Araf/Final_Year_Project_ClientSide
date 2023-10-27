@@ -12,6 +12,18 @@ import About from "../Pages/About/About";
 import StudentLogin from "../Pages/Login/StudentLogin";
 import Admission from "../Pages/Admission/Admission";
 import ReadMore from "../Pages/Home/ParallaxCover/ReadMore";
+// import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../Layout/Dashboard";
+import StudentProfile from "../StudentDashboard/StudentProfile/StudentProfile";
+import AllCourses from "../StudentDashboard/AllCourses/AllCourses";
+import SemesterRegistrations from "../StudentDashboard/SemesterRegistrations/SemesterRegistrations";
+import ExamRegistrations from "../StudentDashboard/ExamRegistrations/ExamRegistrations";
+import TransportRegistrations from "../StudentDashboard/TransportRegistrations/TransportRegistrations";
+import PaymentHistory from "../StudentDashboard/PaymentHistory/PaymentHistory";
+import AttendanceReport from "../StudentDashboard/AttendanceReport/AttendanceReport";
+import SemesterResult from "../StudentDashboard/SemesterResult/SemesterResult";
+import TeachersEvaluation from "../StudentDashboard/TeachersEvaluation/TeachersEvaluation";
+import AdmitCard from "../StudentDashboard/AdmitCard/AdmitCard";
 
 export const router = createBrowserRouter([
     {
@@ -66,6 +78,55 @@ export const router = createBrowserRouter([
                 path: "readMore",
                 element: <ReadMore></ReadMore>,
             },
+        ],
+    },
+
+    {
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: 'StudentProfile',
+                element: <StudentProfile></StudentProfile>
+            },
+            {
+                path: 'AllCourses',
+                element: <AllCourses></AllCourses>
+            },
+            {
+                path: 'SemesterRegistrations',
+                element: <SemesterRegistrations></SemesterRegistrations>
+            },
+            {
+                path: 'ExamRegistrations',
+                element: <ExamRegistrations></ExamRegistrations>
+            },
+            {
+                path: 'TransportRegistrations',
+                element: <TransportRegistrations></TransportRegistrations>
+            },
+            {
+                path: 'PaymentHistory',
+                element: <PaymentHistory></PaymentHistory>
+            },
+            {
+                path: 'AdmitCard',
+                element: <AdmitCard></AdmitCard>
+            },
+            {
+                path: 'AttendanceReport',
+                element: <AttendanceReport></AttendanceReport>
+            },
+            {
+                path: 'SemesterResult',
+                element: <SemesterResult></SemesterResult>
+            },
+            {
+                path: 'TeachersEvaluation',
+                element: <TeachersEvaluation></TeachersEvaluation>
+            }
         ]
     }
-])
+]) 
+
+
