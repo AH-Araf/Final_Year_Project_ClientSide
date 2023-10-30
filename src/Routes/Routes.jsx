@@ -24,9 +24,6 @@ import AttendanceReport from "../StudentDashboard/AttendanceReport/AttendanceRep
 import SemesterResult from "../StudentDashboard/SemesterResult/SemesterResult";
 import TeachersEvaluation from "../StudentDashboard/TeachersEvaluation/TeachersEvaluation";
 import AdmitCard from "../StudentDashboard/AdmitCard/AdmitCard";
-import CSESir1 from "../Pages/SpecificFaculty/CSE/CSESir1";
-import CSESir2 from "../Pages/SpecificFaculty/CSE/CSESir2";
-import CSESir3 from "../Pages/SpecificFaculty/CSE/CSESir3";
 
 export const router = createBrowserRouter([
     {
@@ -81,27 +78,6 @@ export const router = createBrowserRouter([
                 path: "readMore",
                 element: <ReadMore></ReadMore>,
             },
-
-
-            // Routes Start for Specific Faculty-----------------------------------------------------------------------
-
-            {
-                path: "CSESir1",
-                element: <CSESir1></CSESir1>
-            },
-            {
-                path: "CSESir2",
-                element: <CSESir2></CSESir2>
-            },
-            {
-                path: "CSESir3",
-                element: <CSESir3></CSESir3>
-            },
-
-            // Routes End for Specific Faculty--------------------------------------------------------------------------
-
-
-
         ],
     },
 

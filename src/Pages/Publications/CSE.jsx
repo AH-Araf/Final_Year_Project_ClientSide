@@ -28,7 +28,7 @@ const CSE = () => {
                             gmnayeem.cse@baiust.ac.bd <br />
                             01717293250
                         </small> <br />
-                        <Link to='/CSESir1' className="btn btn-active btn-neutral mt-3">View More</Link>
+                        <Link className="btn btn-active btn-neutral mt-3">View More</Link>
                     </div>
                 </section>
             </div>
@@ -45,7 +45,7 @@ const CSE = () => {
                         <small>mak@baiust.ac.bd <br />
                             01711-003233
                         </small> <br />
-                        <Link to='/CSESir2' className="btn btn-active btn-neutral mt-3">View More</Link>
+                        <Link className="btn btn-active btn-neutral mt-3">View More</Link>
                     </div>
                 </section>
             </div>
@@ -62,7 +62,7 @@ const CSE = () => {
                         <small>mamun.cse@baiust.ac.bd<br />
                             01790356681
                         </small> <br />
-                        <Link to='/CSESir3' className="btn btn-active btn-neutral mt-3">View More</Link>
+                        <Link className="btn btn-active btn-neutral mt-3">View More</Link>
                     </div>
                 </section>
             </div>
@@ -79,29 +79,105 @@ const CSE = () => {
                         <small>mousumi.cse@baiust.ac.bd <br />
                             {/* 01717293250 */}
                         </small> <br />
-                        {/* <button className="btn btn-active btn-neutral mt-3">View More</button> */}
+
                         {/*  */}
                         <div className="drawer drawer-end">
                             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                             <div className="drawer-content">
-                                {/* Page content here */}
                                 <label htmlFor="my-drawer-4" className="btn btn-active btn-neutral">View More</label>
                             </div>
                             <div className="drawer-side">
                                 <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
                                 <ul className="menu p-4 drawer-width min-h-full bg-base-200 text-base-content border-s-8 border-green-300">
-                                    {/* Sidebar content here */}
                                     <div>
-                                        <h1>Mousumi Hasan Mukti</h1>
-                                        <h2>Assistant Professor</h2>
+                                        <h1 className='text-2xl font-bold'>Mousumi Hasan Mukti</h1>
+                                        <h2 className='font-bold'>Assistant Professor</h2>
 
-                                        <div className="collapse bg-base-200">
-                                            <input type="checkbox" className="peer" />
-                                            <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                                                Click me to show/hide content
+                                        <div className='flex flex-col gap-2 mt-4'>
+                                            <div className="collapse bg-base-200">
+                                                <input type="checkbox" className="peer" />
+                                                <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black peer-checked:text-secondary-content">
+                                                    FIELD OF WORK
+                                                </div>
+                                                <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black peer-checked:text-secondary-content border-b-4  border-green-300">
+                                                    <p>IMAGE PROCESSING, DATABASE MANAGEMENT SYSTEMS, DATA WARE HOUSING AND DATA MINING</p>
+                                                </div>
                                             </div>
-                                            <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                                                <p>hello</p>
+
+                                            <div className="collapse bg-base-200">
+                                                <input type="checkbox" className="peer" />
+                                                <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black peer-checked:text-secondary-content">
+                                                    EDUCATION
+                                                </div>
+                                                <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black peer-checked:text-secondary-content border-b-4  border-green-300">
+                                                    <div className="flex w-full">
+                                                        <div className="grid  flex-grow  place-items-start">
+                                                            <p><u> MSC.</u> <br />
+                                                                Jahangirnagar University <br />
+                                                                2010-11 <br />
+                                                            </p>
+                                                        </div>
+
+                                                        <div className="divider divider-horizontal"></div>
+
+                                                        <div className="grid  flex-grow card  place-items-start">
+                                                            <p><u>BSC.</u> <br />
+                                                                Jahangirnagar University <br />
+                                                                2006-07 <br />
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="collapse bg-base-200">
+                                                <input type="checkbox" className="peer" />
+                                                <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black peer-checked:text-secondary-content ">
+                                                    WORK EXPERIENCE
+                                                </div>
+                                                <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black peer-checked:text-secondary-content border-b-4  border-green-300">
+                                                    <div className="flex w-full ">
+                                                        <div className="grid  flex-grow  place-items-start">
+                                                            <p><u>Assistant Professor</u> 7th Aug 2018- Present</p>
+                                                        </div>
+
+                                                        <div className="divider divider-horizontal"></div>
+
+                                                        <div className="grid  flex-grow card  place-items-start">
+                                                            <p><u>Lecturer</u> 18th September 2016 -6th Aug 2018</p>
+                                                        </div>
+
+                                                        <div className="divider divider-horizontal"></div>
+
+                                                        <div className="grid  flex-grow card  place-items-start">
+                                                            <p><u>Executive Programmer</u> Sep 2013-Aug 2016</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="collapse bg-base-200">
+                                                <input type="checkbox" className="peer" />
+                                                <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black peer-checked:text-secondary-content ">
+                                                    PUBLICATION BY YEAR
+                                                </div>
+                                                <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black peer-checked:text-secondary-content border-b-4  border-green-300">
+                                                    <div className="flex w-full ">
+                                                        <div className="grid  flex-grow  place-items-start">
+                                                            <p><u>2022</u> <br />
+                                                                Offline Handwritten Signature Recognition Using Deep Convolution Neural Network</p>
+                                                        </div>
+
+                                                        <div className="divider divider-horizontal"></div>
+
+                                                        <div className="grid  flex-grow card  place-items-start">
+                                                            <p><u>2018</u> <br />
+                                                                Bengali Longhand Character Recognition Using Fourier Transform and Euclidean Distance Metric
+                                                                <p className='mt-3'>Noise Reduction from Speech Signals Using Modified Spectral Subtraction Technique</p>
+
+                                                                <p className='mt-3'> Addressing The Security Issues of Kerberos Method using RAID Level 5</p></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
