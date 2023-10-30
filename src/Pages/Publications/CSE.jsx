@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import a from '../../../src/assets/Publications/CSE/a.jpeg'
 import b from '../../../src/assets/Publications/CSE/b.jpg'
 import c from '../../../src/assets/Publications/CSE/c.jpg'
@@ -27,7 +28,7 @@ const CSE = () => {
                             gmnayeem.cse@baiust.ac.bd <br />
                             01717293250
                         </small> <br />
-                        <button className="btn btn-active btn-neutral mt-3">View More</button>
+                        <Link to='/CSESir1' className="btn btn-active btn-neutral mt-3">View More</Link>
                     </div>
                 </section>
             </div>
@@ -44,7 +45,7 @@ const CSE = () => {
                         <small>mak@baiust.ac.bd <br />
                             01711-003233
                         </small> <br />
-                        <button className="btn btn-active btn-neutral mt-3">View More</button>
+                        <Link to='/CSESir2' className="btn btn-active btn-neutral mt-3">View More</Link>
                     </div>
                 </section>
             </div>
@@ -61,7 +62,7 @@ const CSE = () => {
                         <small>mamun.cse@baiust.ac.bd<br />
                             01790356681
                         </small> <br />
-                        <button className="btn btn-active btn-neutral mt-3">View More</button>
+                        <Link to='/CSESir3' className="btn btn-active btn-neutral mt-3">View More</Link>
                     </div>
                 </section>
             </div>
@@ -78,7 +79,36 @@ const CSE = () => {
                         <small>mousumi.cse@baiust.ac.bd <br />
                             {/* 01717293250 */}
                         </small> <br />
-                        <button className="btn btn-active btn-neutral mt-3">View More</button>
+                        {/* <button className="btn btn-active btn-neutral mt-3">View More</button> */}
+                        {/*  */}
+                        <div className="drawer drawer-end">
+                            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+                            <div className="drawer-content">
+                                {/* Page content here */}
+                                <label htmlFor="my-drawer-4" className="btn btn-active btn-neutral">View More</label>
+                            </div>
+                            <div className="drawer-side">
+                                <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+                                <ul className="menu p-4 drawer-width min-h-full bg-base-200 text-base-content border-s-8 border-green-300">
+                                    {/* Sidebar content here */}
+                                    <div>
+                                        <h1>Mousumi Hasan Mukti</h1>
+                                        <h2>Assistant Professor</h2>
+
+                                        <div className="collapse bg-base-200">
+                                            <input type="checkbox" className="peer" />
+                                            <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                                                Click me to show/hide content
+                                            </div>
+                                            <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                                                <p>hello</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        {/*  */}
                     </div>
                 </section>
             </div>

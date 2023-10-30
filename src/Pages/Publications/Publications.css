@@ -38,7 +38,9 @@
     font-size: x-large;
     font-weight: 600;
 }
-
+.drawer-width{
+    width: 600px;
+}
 @media only screen and (max-width: 516px){
     .cv-resume{
         display: flex;
@@ -73,4 +75,10 @@
     }
     
     
+}
+
+@media only screen and (max-width: 615px){
+    .drawer-width{
+        width: 350px;
+    }
 }
