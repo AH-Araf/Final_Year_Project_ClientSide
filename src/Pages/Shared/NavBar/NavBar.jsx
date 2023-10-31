@@ -60,9 +60,8 @@ const NavBar = () => {
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                     
-                        <li>
-                            <NavLink to="/">Home</NavLink>
-                        </li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        
                         <li tabIndex={0}>
                             <details>
                                 <summary>BAIUST</summary>
@@ -92,7 +91,7 @@ const NavBar = () => {
                         <li><NavLink to="/contact">Contact</NavLink></li>
                         <li><NavLink to="/about">About</NavLink></li>
                         <li><NavLink to="/dashboard/StudentProfile">Dashboard</NavLink></li>
-
+                        
 
                     </ul>
                     

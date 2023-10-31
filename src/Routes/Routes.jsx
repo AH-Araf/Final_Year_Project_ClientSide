@@ -24,6 +24,7 @@ import AttendanceReport from "../StudentDashboard/AttendanceReport/AttendanceRep
 import SemesterResult from "../StudentDashboard/SemesterResult/SemesterResult";
 import TeachersEvaluation from "../StudentDashboard/TeachersEvaluation/TeachersEvaluation";
 import AdmitCard from "../StudentDashboard/AdmitCard/AdmitCard";
+import Notice from "../Pages/Notice/Notice";
 
 export const router = createBrowserRouter([
     {
@@ -77,6 +78,10 @@ export const router = createBrowserRouter([
             {
                 path: "readMore",
                 element: <ReadMore></ReadMore>,
+            },
+            {
+                path: "notice",
+                element: <Notice></Notice>
             },
         ],
     },

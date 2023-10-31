@@ -4,6 +4,7 @@ import { AiOutlineCar,  AiOutlineFundView, AiOutlineEdit, AiOutlineIdcard, AiOut
 import { BsFileEarmarkDiff } from "react-icons/bs";
 import { MdOutlinePayment } from "react-icons/md";
 import StudentDashboardProfile from "../StudentDashboard/StudentDashboardProfile/StudentDashboardProfile";
+import { PiCertificate } from "react-icons/pi";
 
 
 
@@ -45,7 +46,7 @@ const Dashboard = () => {
                         <li><NavLink to="/dashboard/AttendanceReport"><AiOutlineInsertRowRight></AiOutlineInsertRowRight>Attendance Report</NavLink></li>
                         <li><NavLink to="/dashboard/SemesterResult"><AiOutlineFundView></AiOutlineFundView>Semester Result</NavLink></li>
                         <li><NavLink to="/dashboard/TeachersEvaluation"><BsFileEarmarkDiff></BsFileEarmarkDiff>Teachers Evaluation</NavLink></li>
-                        
+                        <li><NavLink to="/dashboard/TeachersEvaluation"><PiCertificate></PiCertificate>Certificate Verification</NavLink></li>
                     </ul>
                 </div>
             </div>
