@@ -15,13 +15,24 @@ const Home = () => {
             <Helmet>
                 <title>BAIUST | Home</title>
             </Helmet>
-            
+
+
             <Banner></Banner>
             <MarqueeText></MarqueeText>
-            <HomeDetails></HomeDetails>
-            <ParallaxCover></ParallaxCover>
-            <SwiperImg></SwiperImg>
-            <YouTubeVideo></YouTubeVideo>
+
+            <div
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+            >
+                <HomeDetails></HomeDetails>
+                <ParallaxCover></ParallaxCover>
+                <SwiperImg></SwiperImg>
+                <YouTubeVideo></YouTubeVideo>
+            </div>
+
+
+
         </div>
     );
 };
