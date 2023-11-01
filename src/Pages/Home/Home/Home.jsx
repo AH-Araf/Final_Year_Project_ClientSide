@@ -16,22 +16,31 @@ const Home = () => {
                 <title>BAIUST | Home</title>
             </Helmet>
 
+            <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+            >
+                <Banner></Banner>
 
-            <Banner></Banner>
+            </div>
             <MarqueeText></MarqueeText>
 
-            <div
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-            >
-                <HomeDetails></HomeDetails>
-                <ParallaxCover></ParallaxCover>
+            <HomeDetails></HomeDetails>
+
+            <ParallaxCover></ParallaxCover>
+            <div data-aos="zoom-in-down">
                 <SwiperImg></SwiperImg>
+            </div>
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="top-center">
                 <YouTubeVideo></YouTubeVideo>
             </div>
-
-
 
         </div>
     );

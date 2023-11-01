@@ -26,7 +26,9 @@ const Footer = () => {
                 </nav>
                 <nav>
                     <u><header className="footer-title">Location</header></u>
-                    <GMap></GMap>
+                    <div data-aos="flip-down">
+                        <GMap></GMap>
+                    </div>
                 </nav>
             </footer>
             <footer className="footer px-10 py-4 border-t-4 bg-green-200 text-base-content border-base-300">

@@ -25,7 +25,14 @@ const Contact = () => {
             <Helmet>
                 <title>BAIUST | Contact</title>
             </Helmet>
-            <div >
+            <div data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
                 <div className='m-5 border-4 border-green-300'>
                     <div className="bg-image"></div>
                 </div>
@@ -41,11 +48,15 @@ const Contact = () => {
 
 
             <section className='mail-main-section'>
-                <section>
+                <section
+                    data-aos="fade-up-right"
+                >
                     <img src={mailImg} alt="" />
                 </section>
 
-                <section className='mail-section mt-20'>
+                <section className='mail-section mt-20'
+                    data-aos="fade-up-left"
+                >
 
                     <form className='email-from' ref={form} onSubmit={sendEmail}>
                         <h1 className='text-2xl email-heading'>Send a message </h1>

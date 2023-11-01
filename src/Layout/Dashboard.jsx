@@ -28,7 +28,7 @@ const Dashboard = () => {
                     <Outlet></Outlet>
    
                 </div>
-                <div className="drawer-side">
+                <div className="drawer-side" data-aos="fade-right">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-70 min-h-full bg-gray-600 text-white border-e-8 border-green-300">
                             

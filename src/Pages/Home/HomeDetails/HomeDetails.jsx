@@ -5,7 +5,7 @@ import './HomeDetails.css'
 const HomeDetails = () => {
     return (
         <div className='home-details-main'>
-            <div className='home-details-body'>
+            <div className='home-details-body' data-aos="fade-right">
                 <h2 className='bg-green-200'>Why BAIUST?</h2>
                 <div className='home-details-sec1 border-green-200 border-4'>
                     <img src={b} alt="" />
@@ -17,7 +17,7 @@ const HomeDetails = () => {
 
             {/*  */}
 
-            <div className='home-details-body'>
+            <div className='home-details-body' data-aos="fade-left">
                 <h2 className='bg-green-200'>Life @ BAIUST</h2>
                 <div className='home-details-sec1 border-green-200 border-4'>
                     <img src={a} alt="" />
