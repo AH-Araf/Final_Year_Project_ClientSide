@@ -15,6 +15,7 @@ import l from '../../../src/assets/Publications/CSE/l.jpg'
 const CSE = () => {
     return (
         <div className="scroll-smooth">
+
             <div className='msc-container'>
                 <div>
                     <img src={a} alt="" />
@@ -29,8 +30,51 @@ const CSE = () => {
                             01717293250
                         </small> <br />
                         <Link className="btn btn-active btn-neutral mt-3">View More</Link>
+
                     </div>
+
                 </section>
+
+                <div>
+                    {/*  */}
+                    <div className="collapse bg-base-200">
+                        <input type="checkbox" className="peer" />
+                        <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black ">
+                            FIELD OF WORK
+                        </div>
+                        <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black  border-b-4  border-green-300">
+                            <p>IMAGE PROCESSING, DATABASE MANAGEMENT SYSTEMS, DATA WARE HOUSING AND DATA MINING</p>
+                        </div>
+                    </div>
+
+                    <div className="collapse bg-base-200">
+                        <input type="checkbox" className="peer" />
+                        <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black">
+                            EDUCATION
+                        </div>
+                        <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black  border-b-4  border-green-300">
+                            <div className="flex w-full">
+                                <div className="grid  flex-grow  place-items-start">
+                                    <p><u> MSC.</u> <br />
+                                        Jahangirnagar University <br />
+                                        2010-11 <br />
+                                    </p>
+                                </div>
+
+                                <div className="divider divider-horizontal"></div>
+
+                                <div className="grid  flex-grow card  place-items-start">
+                                    <p><u>BSC.</u> <br />
+                                        Jahangirnagar University <br />
+                                        2006-07 <br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/*  */}
+                </div>
+
             </div>
 
             <div className='msc-container'>
@@ -45,10 +89,54 @@ const CSE = () => {
                         <small>mak@baiust.ac.bd <br />
                             01711-003233
                         </small> <br />
-                        <Link className="btn btn-active btn-neutral mt-3">View More</Link>
+
+
                     </div>
                 </section>
+
+                <div>
+                    {/*  */}
+                    <div className="collapse bg-base-200">
+                        <input type="checkbox" className="peer" />
+                        <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black ">
+                            FIELD OF WORK
+                        </div>
+                        <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black  border-b-4  border-green-300">
+                            <p>IMAGE PROCESSING, DATABASE MANAGEMENT SYSTEMS, DATA WARE HOUSING AND DATA MINING</p>
+                        </div>
+                    </div>
+
+                    <div className="collapse bg-base-200">
+                        <input type="checkbox" className="peer" />
+                        <div className="collapse-title bg-slate-600 text-primary-content peer-checked:bg-green-300 peer-checked:text-black">
+                            EDUCATION
+                        </div>
+                        <div className="collapse-content bg-slate-600 text-primary-content peer-checked:bg-green-200 peer-checked:text-black  border-b-4  border-green-300">
+                            <div className="flex w-full">
+                                <div className="grid  flex-grow  place-items-start">
+                                    <p><u> MSC.</u> <br />
+                                        Jahangirnagar University <br />
+                                        2010-11 <br />
+                                    </p>
+                                </div>
+
+                                <div className="divider divider-horizontal"></div>
+
+                                <div className="grid  flex-grow card  place-items-start">
+                                    <p><u>BSC.</u> <br />
+                                        Jahangirnagar University <br />
+                                        2006-07 <br />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/*  */}
+                </div>
+
             </div>
+
 
             <div className='msc-container'>
                 <div>
@@ -99,7 +187,7 @@ const CSE = () => {
                                                 <h2 className='font-bold'>mousumi.cse@baiust.ac.bd</h2>
                                             </div>
                                             <div className='imgCollapse'>
-                                                <img  src={d} alt="" />
+                                                <img src={d} alt="" />
                                             </div>
                                         </div>
 
@@ -194,6 +282,7 @@ const CSE = () => {
                                 </ul>
                             </div>
                         </div>
+                        
                         {/*  */}
                     </div>
                 </section>
@@ -334,6 +423,9 @@ const CSE = () => {
                     </div>
                 </section>
             </div>
+
+
+
 
 
         </div>

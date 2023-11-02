@@ -1,4 +1,4 @@
-.education-body{
+.education-body {
     background-color: white;
     color: black;
     padding: 40px 80px;
@@ -6,27 +6,32 @@
 }
 
 
-.msc-container{
+.msc-container {
     margin-top: 20px;
     column-count: 2;
     padding: 20px;
     border: 5px solid lightgray;
     border-radius: 25px;
     transition-duration: 2.5s;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.msc-container:hover{
+.msc-container:hover {
     padding: 20px 50px;
     background-color: rgb(209, 228, 216);
     /* rgb(189, 214, 189) */
 }
-.msc-container-text{
+
+.msc-container-text {
     height: 300px;
     display: flex;
     flex-direction: column;
     font-size: large;
 }
-.msc-container img{
+
+.msc-container img {
     width: 250px;
     height: 300px;
     /* border: 3px solid lavenderblush; */
@@ -34,57 +39,67 @@
     background-color: lightgray;
     border-radius: 20px;
 }
-.text-header{
+
+.text-header {
     font-size: x-large;
     font-weight: 600;
 }
-.drawer-width{
+
+.drawer-width {
     width: 600px;
 }
-.imgCollapse img{
+
+.imgCollapse img {
     width: 80px;
     height: 100px;
     border-radius: 0px;
 }
 
-@media only screen and (max-width: 516px){
-    .cv-resume{
+@media only screen and (max-width: 516px) {
+    .cv-resume {
         display: flex;
         flex-direction: column;
         align-items: center;
-     }
-     .cvr-btn{
+    }
+
+    .cvr-btn {
         margin: 10px;
-     }
-     .education-body{
+    }
+
+    .education-body {
         background-color: white;
         color: black;
         padding: 20px 10px;
     }
-    .text-header{
+
+    .text-header {
         margin-top: 25px;
     }
 
-    .msc-container{
+    .msc-container {
+        margin-top: 20px;
+        column-count: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .msc-container:hover {
         margin-top: 20px;
         column-count: 1;
         padding: 20px;
     }
-    .msc-container:hover{
-        margin-top: 20px;
-        column-count: 1;
-        padding: 20px;
-    }
- 
-    .mt-top{
+
+    .mt-top {
         margin-top: 10px;
     }
-    
-    
+
+
 }
 
-@media only screen and (max-width: 615px){
-    .drawer-width{
+@media only screen and (max-width: 615px) {
+    .drawer-width {
         width: 350px;
     }
 }
