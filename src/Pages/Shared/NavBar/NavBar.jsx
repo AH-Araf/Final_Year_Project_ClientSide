@@ -23,7 +23,8 @@ const NavBar = () => {
                                 <details>
                                     <summary>BAIUST</summary>
                                     <ul className="p-2 bg-opacity-30 bg-green-100 dropdown-box">
-                                        <li><NavLink to="/publications">Publications</NavLink></li>
+                                        <li><NavLink to="/publications">Faculty</NavLink></li>
+                                        {/* <li><NavLink to="/publications">Publications</NavLink></li> */}
                                         <li><NavLink target="_blank" to="https://drive.google.com/file/d/1eafym5wCUU4iPJxMUYIHIjlZsbD8Jk0O/view">Academic Calender</NavLink></li>
                                         <li><NavLink target="_blank" to="https://drive.google.com/file/d/1RCNhKrqqajRDvfCqHdRCZAjum_MC76pB/view">News Letter</NavLink></li>
                                         <li><NavLink to="/journal">Journal</NavLink></li>
@@ -59,14 +60,15 @@ const NavBar = () => {
                 {/* Large Device */}
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                    
+
                         <li><NavLink to="/">Home</NavLink></li>
-                        
+
                         <li tabIndex={0}>
                             <details>
                                 <summary>BAIUST</summary>
                                 <ul className="p-2 z-[1]  bg-green-100 dropdown-box">
-                                    <li><NavLink to="/publications">Publications</NavLink></li>
+                                    <li><NavLink to="/publications">Faculty</NavLink></li>
+                                    {/* <li><NavLink to="/publications">Publications</NavLink></li> */}
                                     <li><NavLink target="_blank" to="https://drive.google.com/file/d/1eafym5wCUU4iPJxMUYIHIjlZsbD8Jk0O/view">Academic Calender</NavLink></li>
                                     <li><NavLink target="_blank" to="https://drive.google.com/file/d/1RCNhKrqqajRDvfCqHdRCZAjum_MC76pB/view">News Letter</NavLink></li>
                                     <li><NavLink to="/journal">Journal</NavLink></li>
@@ -91,10 +93,10 @@ const NavBar = () => {
                         <li><NavLink to="/contact">Contact</NavLink></li>
                         <li><NavLink to="/about">About</NavLink></li>
                         <li><NavLink to="/dashboard/StudentProfile">Dashboard</NavLink></li>
-                        
+
 
                     </ul>
-                    
+
                 </div>
 
             </div>
