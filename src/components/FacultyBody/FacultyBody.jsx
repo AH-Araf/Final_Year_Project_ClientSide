@@ -31,6 +31,7 @@ const FacultyBody = ({ img,
                             <p>{fieldOfWork}</p>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div className="text-start mt-1 text-xs">
