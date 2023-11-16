@@ -12,7 +12,6 @@ import About from "../Pages/About/About";
 import StudentLogin from "../Pages/Login/StudentLogin";
 import Admission from "../Pages/Admission/Admission";
 import ReadMore from "../Pages/Home/ParallaxCover/ReadMore";
-// import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../Layout/Dashboard";
 import StudentProfile from "../StudentDashboard/StudentProfile/StudentProfile";
 import AllCourses from "../StudentDashboard/AllCourses/AllCourses";
@@ -25,6 +24,11 @@ import SemesterResult from "../StudentDashboard/SemesterResult/SemesterResult";
 import TeachersEvaluation from "../StudentDashboard/TeachersEvaluation/TeachersEvaluation";
 import AdmitCard from "../StudentDashboard/AdmitCard/AdmitCard";
 import Notice from "../Pages/Notice/Notice";
+import CertificateVerification from "../Pages/CertificateVerification/CertificateVerification";
+import NewRegister from "../Pages/NewRegister/NewRegister";
+import AdminHome from "../AdminDashboard/AdminHome/AdminHome";
+import AdminRoute from "./AdminRoute";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -68,6 +72,10 @@ export const router = createBrowserRouter([
                 element: <StudentLogin></StudentLogin>
             },
             {
+                path: "newRegister",
+                element: <NewRegister></NewRegister>
+            },
+            {
                 path: "about",
                 element: <About></About>,
             },
@@ -83,12 +91,16 @@ export const router = createBrowserRouter([
                 path: "notice",
                 element: <Notice></Notice>
             },
+            {
+                path: "certificateVerification",
+                element: <CertificateVerification></CertificateVerification>
+            },
         ],
     },
 
     {
         path: 'dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
                 path: 'StudentProfile',
@@ -129,6 +141,12 @@ export const router = createBrowserRouter([
             {
                 path: 'TeachersEvaluation',
                 element: <TeachersEvaluation></TeachersEvaluation>
+            },
+
+            //Admin
+            {
+                path: 'adminhome',
+                element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
             }
         ]
     }

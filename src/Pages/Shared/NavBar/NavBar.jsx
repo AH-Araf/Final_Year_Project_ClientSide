@@ -1,10 +1,12 @@
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import './NavBar.css'
 import logo from '../../../../public/logo.png'
 
 
 
+
 const NavBar = () => {
+    
 
     return (
         <div>
@@ -29,12 +31,12 @@ const NavBar = () => {
                                         <li><NavLink target="_blank" to="https://drive.google.com/file/d/1RCNhKrqqajRDvfCqHdRCZAjum_MC76pB/view">News Letter</NavLink></li>
                                         <li><NavLink to="/journal">Journal</NavLink></li>
                                         <li><NavLink to="/imageGallery">Image Gallery</NavLink></li>
+                                        <li><NavLink to="/certificateVerification">Certificate Verification</NavLink></li>
 
-                                        {/* <li><NavLink to="/">Certificate Verification</NavLink></li> */}
-                                        {/* Student Dashboard */}
                                     </ul>
                                 </details>
                             </li>
+                            <li><NavLink to="/notice">Notice</NavLink></li>
                             <li><NavLink to="/admission">Admission</NavLink></li>
                             <li tabIndex={0}>
                                 <details>
@@ -58,7 +60,7 @@ const NavBar = () => {
 
 
                 {/* Large Device */}
-                <div className="navbar-end hidden lg:flex">
+                <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
 
                         <li><NavLink to="/">Home</NavLink></li>
@@ -73,12 +75,12 @@ const NavBar = () => {
                                     <li><NavLink target="_blank" to="https://drive.google.com/file/d/1RCNhKrqqajRDvfCqHdRCZAjum_MC76pB/view">News Letter</NavLink></li>
                                     <li><NavLink to="/journal">Journal</NavLink></li>
                                     <li><NavLink to="/imageGallery">Image Gallery</NavLink></li>
+                                    <li><NavLink to="/certificateVerification">Certificate Verification</NavLink></li>
 
-                                    {/* <li><NavLink to="/">Certificate Verification</NavLink></li> */}
-                                    {/* Student Dashboard */}
                                 </ul>
                             </details>
                         </li>
+                        <li><NavLink to="/notice">Notice</NavLink></li>
                         <li><NavLink to="/admission">Admission</NavLink></li>
                         <li tabIndex={0}>
                             <details>
@@ -86,8 +88,12 @@ const NavBar = () => {
                                 <ul className="p-2 z-[1]  bg-green-100 dropdown-box">
                                     <li><NavLink to="/adminLogin">Faculty/Officers/Staffs</NavLink></li>
                                     <li><NavLink to="/studentLogin">Student</NavLink></li>
+                                    <li><NavLink to="/newRegister">Register</NavLink></li>
                                 </ul>
                             </details>
+
+                            
+
                         </li>
 
                         <li><NavLink to="/contact">Contact</NavLink></li>

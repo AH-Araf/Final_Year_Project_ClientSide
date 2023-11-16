@@ -1,16 +1,18 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { BiBookOpen } from "react-icons/bi";
-import { AiOutlineCar,  AiOutlineFundView, AiOutlineEdit, AiOutlineIdcard, AiOutlineUser, AiOutlineInsertRowRight, AiOutlineFileProtect } from "react-icons/ai";
+import { AiOutlineCar, AiOutlineFundView, AiOutlineEdit, AiOutlineIdcard, AiOutlineUser, AiOutlineInsertRowRight, AiOutlineFileProtect } from "react-icons/ai";
 import { BsFileEarmarkDiff } from "react-icons/bs";
 import { MdOutlinePayment } from "react-icons/md";
 import StudentDashboardProfile from "../StudentDashboard/StudentDashboardProfile/StudentDashboardProfile";
-import { PiCertificate } from "react-icons/pi";
+import useAdmin from "../hooks/useAdmin";
+
+
 
 
 
 const Dashboard = () => {
 
-    
+    const [isAdmin] = useAdmin();
 
     return (
         <div>
@@ -26,27 +28,44 @@ const Dashboard = () => {
 
                     {/* <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button ">Dashboard</label> */}
                     <Outlet></Outlet>
-   
+
                 </div>
                 <div className="drawer-side" data-aos="fade-right">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-70 min-h-full bg-gray-600 text-white border-e-8 border-green-300">
-                            
+
                         <StudentDashboardProfile></StudentDashboardProfile>
 
                         <div className="divider"></div>
 
-                        <li><NavLink to="/dashboard/StudentProfile"><AiOutlineUser></AiOutlineUser>Student Profile</NavLink></li>
-                        <li><NavLink to="/dashboard/AllCourses"> <BiBookOpen></BiBookOpen>All Courses</NavLink></li>
-                        <li><NavLink to="/dashboard/SemesterRegistrations"><AiOutlineFileProtect></AiOutlineFileProtect>Semester Registrations</NavLink></li>
-                        <li><NavLink to="/dashboard/ExamRegistrations"><AiOutlineEdit></AiOutlineEdit> Exam Registrations</NavLink></li>
-                        <li><NavLink to="/dashboard/TransportRegistrations"><AiOutlineCar></AiOutlineCar>Transport Registrations</NavLink></li>
-                        <li><NavLink to="/dashboard/PaymentHistory"><MdOutlinePayment></MdOutlinePayment>Payment History</NavLink></li>
-                        <li><NavLink to="/dashboard/AdmitCard"><AiOutlineIdcard></AiOutlineIdcard> Admit Card</NavLink></li>
-                        <li><NavLink to="/dashboard/AttendanceReport"><AiOutlineInsertRowRight></AiOutlineInsertRowRight>Attendance Report</NavLink></li>
-                        <li><NavLink to="/dashboard/SemesterResult"><AiOutlineFundView></AiOutlineFundView>Semester Result</NavLink></li>
-                        <li><NavLink to="/dashboard/TeachersEvaluation"><BsFileEarmarkDiff></BsFileEarmarkDiff>Teachers Evaluation</NavLink></li>
-                        <li><NavLink to="/dashboard/TeachersEvaluation"><PiCertificate></PiCertificate>Certificate Verification</NavLink></li>
+                        {
+                            isAdmin ? <>
+                            
+                                <li><NavLink to="/dashboard/adminhome">Admin Home</NavLink></li>
+                                <li><NavLink to="/dashboard/addItem"> Add an Item</NavLink></li>
+                                <li><NavLink to="/dashboard/manageitems"> Manage Items</NavLink></li>
+                                <li><NavLink to="/dashboard/history">Manage Bookings</NavLink></li>
+                                <li><NavLink to="/dashboard/allusers">All Users</NavLink></li>
+
+
+                            </> : <>
+                            
+                                <li><NavLink to="/dashboard/StudentProfile"><AiOutlineUser></AiOutlineUser>Student Profile</NavLink></li>
+                                <li><NavLink to="/dashboard/AllCourses"> <BiBookOpen></BiBookOpen>All Courses</NavLink></li>
+                                <li><NavLink to="/dashboard/SemesterRegistrations"><AiOutlineFileProtect></AiOutlineFileProtect>Semester Registrations</NavLink></li>
+                                <li><NavLink to="/dashboard/ExamRegistrations"><AiOutlineEdit></AiOutlineEdit> Exam Registrations</NavLink></li>
+                                <li><NavLink to="/dashboard/TransportRegistrations"><AiOutlineCar></AiOutlineCar>Transport Registrations</NavLink></li>
+                                <li><NavLink to="/dashboard/PaymentHistory"><MdOutlinePayment></MdOutlinePayment>Payment History</NavLink></li>
+                                <li><NavLink to="/dashboard/AdmitCard"><AiOutlineIdcard></AiOutlineIdcard> Admit Card</NavLink></li>
+                                <li><NavLink to="/dashboard/AttendanceReport"><AiOutlineInsertRowRight></AiOutlineInsertRowRight>Attendance Report</NavLink></li>
+                                <li><NavLink to="/dashboard/SemesterResult"><AiOutlineFundView></AiOutlineFundView>Semester Result</NavLink></li>
+                                <li><NavLink to="/dashboard/TeachersEvaluation"><BsFileEarmarkDiff></BsFileEarmarkDiff>Teachers Evaluation</NavLink></li>
+                            </>
+                        }
+
+
+
+
                     </ul>
                 </div>
             </div>
