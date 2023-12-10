@@ -1,9 +1,31 @@
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import JournalHome from "./JournalHome";
+import EditorialBoard from "./EditorialBoard";
 
 
 const Journal = () => {
     return (
         <div>
-            <h1>Journal</h1>
+            <Tabs>
+                <TabList className='bg-blue-200'>
+                    <Tab>Home</Tab>
+                    <Tab>Editorial Board</Tab>
+                    
+                </TabList>
+
+
+
+                <TabPanel>
+                    <JournalHome></JournalHome>
+                </TabPanel>
+                
+                <TabPanel>
+                    <EditorialBoard></EditorialBoard>
+                </TabPanel>
+
+
+                
+            </Tabs>
         </div>
     );
 };
